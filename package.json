@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "thesis-editor-front",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,20 +7,30 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.4.1",
-    "@types/node": "^16.11.33",
-    "@types/react": "^18.0.8",
-    "@types/react-dom": "^18.0.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "@types/node": "^16.11.27",
+    "@types/react": "^18.0.6",
+    "@types/react-dom": "^18.0.2",
+    "antd": "^4.20.2",
+    "classnames": "^2.3.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "loadsh": "^0.0.4",
+    "nanoid": "^4.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-icons": "^4.4.0",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.6.4",
+    "slate": "^0.81.1",
+    "slate-history": "^0.66.0",
+    "slate-react": "^0.81.0",
+    "typescript": "^4.6.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "fix": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "node-sass": "^7.0.1",
+    "react-app-rewired": "^2.2.1"
   }
 }
